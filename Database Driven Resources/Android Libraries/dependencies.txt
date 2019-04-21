@@ -1,0 +1,19 @@
+//add after buildTypes 
+packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+    android {
+        useLibrary 'org.apache.http.legacy'
+    }
+
+
+
+//dependencies
+
+  compile files('libs/jsoup-1.8.3.jar')
+    compile files('libs/httpcore-4.4.3.jar')
+    compile files('libs/httpmime-4.5.1.jar')
+    compile files('libs/android-async-http-1.4.4.jar')
+    compile files('libs/httpclient-4.5.1.jar')
